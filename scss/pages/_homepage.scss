@@ -83,7 +83,7 @@
                 font-size: 44px;
             }
             @include sm{
-                font-size: 21px;
+                font-size: 18px;
             }
             // @include xs{
             //     font-size: 18px;
@@ -101,7 +101,7 @@
                 margin-top: .625rem;
             }
             @include sm{
-                font-size: 13px;
+                font-size: 10px;
                 margin-top: .5rem;
                 line-height: 1.5;
             }
@@ -129,6 +129,9 @@
         .title{
             @extend %title;
             color: $black2Color;
+            @include sm{
+                font-size: 30px
+            }
         }
         img{
             @extend %title-img;
@@ -189,6 +192,9 @@
             @extend %title;
             padding-top: 3.25rem;
             color: $whiteColor;
+            @include sm{
+                font-size: 25px;
+            }
         }
         img{
             @extend %title-img;
