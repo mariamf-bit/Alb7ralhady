@@ -1,0 +1,44 @@
+.main-footer{
+
+        background-color: $pinkColor;
+        text-align: center;
+        padding-top: .625rem;
+        .down-content{
+            display: flex;
+            justify-content: space-between;
+
+            .down-nav-content{
+                // margin-#{$start}: 40px;
+                @include sm{
+                    margin-#{$start}: .625rem;
+                }
+
+                p{
+                    
+                    color: #fff;
+                    font-family: $mainfont;
+                    font-size: 14px;
+                    font-weight: normal;
+                    text-align: $end;
+                    line-height: 1.86;
+                }
+        
+            }
+            ul{ 
+                display: flex;
+                margin-#{$end}: 2.5rem;
+                @include sm{
+                    margin-#{$end}: 0rem;
+                }
+                li{
+                    @extend %li;
+        
+                }
+
+
+            }
+    
+        }
+    
+        }
+    

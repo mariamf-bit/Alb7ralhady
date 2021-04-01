@@ -1,0 +1,76 @@
+// media query
+
+@mixin sm {
+    @media(max-width: 576px){
+        @content;
+    }
+    
+}
+
+@mixin md{
+    @media(max-width: 768px){
+        @content;
+    }
+    
+}
+
+
+@mixin lg {
+    @media(max-wdith: 992px){
+        @content;
+    }
+    
+}
+
+
+@mixin xl {
+    @media(max-wdith: 1024px){
+        @content;
+    }
+    
+}
+
+
+// @mixin xxl {
+//     @media(max-wdith: 1440px){
+//         @content;
+//     }
+    
+// }
+
+
+
+// overlay Mixin
+
+@mixin overlay {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+// prefixes Mixin
+
+@mixin prefixer ($property , $value , $prefixes:()) {
+    @each $prefix in prefixes {
+        #{'-'+ $prefix + '-' $property}:$value;
+    }
+    #{$property}:$value;
+    
+}
+
+// Animation Mixin
+
+@mixin keyFrame ($animation-name) {
+    @-webkit-keyframes #{$animation-name}{
+        @content;
+    }
+    @-moz-keyframes #{$animation-name}{
+        @content;
+    }
+    @-webkit-keyframes #{$animation-name}{
+        @content;
+    }
+    
+}

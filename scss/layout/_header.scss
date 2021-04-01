@@ -1,0 +1,79 @@
+
+.main-header{
+    margin-bottom: 1.25rem;
+
+    .top-nav{
+        @include md{
+            display:none
+        }
+        background-color: $pinkColor;
+        padding: .625rem 0;
+        
+        .bar-content{
+            display: flex;
+            justify-content: space-between;
+
+        ul{ 
+            display: flex;
+            margin-bottom: 0;
+            margin-#{$end}: 2.5rem;
+            
+            li{
+                @extend %li;
+    
+            }
+        }
+        .top-nav-content{
+            margin-#{$start}: 2.5rem;
+            a{
+                text-decoration: none;
+                text-align: $end;
+                color: $whiteColor;
+                font-size: 16px;
+                padding: 0 3.25rem;
+            }
+            }
+        }
+    }
+
+    .navbar {
+        background-color: $whiteColor;
+        font-size: 18px;
+        .navbar-toggler{
+            color: $pinkColor;
+        }
+        .navbar-list{
+            margin-#{$start}: auto;
+            .nav-item{
+                padding: 0 1.0375rem;
+                font-family: $mainfont;
+                font-size: 18px;
+                font-weight: normal;
+                line-height: 1.83;
+                .nav-link{
+                    color: $blackColor;
+                    &.active{
+                        color: $pinkColor;
+                    }
+                }
+                
+            }
+        }
+        .logo{
+            img{
+                width: 16.875rem;
+                margin-#{$start}: 4.6875rem;
+                @include sm{
+                    width: 13.125rem;
+                }
+            
+            }
+        }
+        
+    }
+}
+
+
+
+    
+    
