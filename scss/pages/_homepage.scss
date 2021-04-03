@@ -4,6 +4,7 @@
     overflow: hidden;
     margin-bottom: 5.625rem;
     height: 100vh;
+    background-size: cover;
     @include md{
         height:auto;
     }
@@ -181,6 +182,7 @@
     // background-image: url("/images/backgrounds/new.jpg");
     opacity: 0.91;
     background-color: $black3Color;
+    background-size: cover;
     margin-bottom: 3.625rem;
 
     .content-title{
@@ -273,9 +275,7 @@
 
 .Contact{
     margin-bottom: 6.75rem;
-    @include sm{
-        display: none;
-    }
+    
 
     .content-title{
         @extend %content-title;
@@ -295,43 +295,27 @@
     }
     .contact-content{
         form{
-            @include sm{
-                display: none;
-            }
-        
-            .contact-p{
-                display: flex;
-                p{
-                    .des-p{
-                        border: solid 1px $grey2Color;
-                        margin: 2.78125rem 3.8px 1.4rem 1.975rem;
-                        padding: .96875rem .825rem 1.15625rem 14.13125rem;
-                    }
-                }
-            }
-            p{
-                .ccomment{
-                    margin: -0.475rem .1875rem 1.48125rem .125rem;
-                    padding: .31875rem .5rem 7.45625rem 46rem;
-                    border: solid 1px $grey2Color;
-                }
-            }
             
-            p{
-                .submit{
-                    @extend%button-bg;
-                }
+        
+            .form-control{
+                
+                margin: -0.21875rem 3.8px 1.4rem 1.975rem;
+                padding: .96875rem .825rem 1.15625rem 14.13125rem;
             }
-    
+            textarea.form-control {
+                margin: -0.475rem .1875rem 1.48125rem .125rem;
+                padding: .31875rem .5rem 7.45625rem 46rem;
         }
         .maps{
             @include xl{
                 display: none;
             }
-            @include md{
-                display: none;
-            }
+            
+        }
+        .myBtn{
+            @extend%button-bg;
         }
     }
     
+}
 }
