@@ -294,17 +294,18 @@
         
     }
     .contact-content{
+        
         form{
             
         
-            .form-control{
-                
-                margin: -0.21875rem 3.8px 1.4rem 1.975rem;
-                padding: .96875rem .825rem 1.15625rem 14.13125rem;
-            }
+            
             textarea.form-control {
-                margin: -0.475rem .1875rem 1.48125rem .125rem;
-                padding: .31875rem .5rem 7.45625rem 46rem;
+                margin-bottom: .625rem;
+                margin-top: 10px;
+//                 @include md{
+//                     padding: -0.68125rem .5rem 7.45625rem 46rem;
+// }
+                }
         }
         .maps{
             @include xl{
@@ -314,8 +315,10 @@
         }
         .myBtn{
             @extend%button-bg;
+            @include sm{
+                margin-bottom: .625rem;
+            }
         }
     }
     
-}
 }
